@@ -1,0 +1,14 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+maxUploadSize = 1000
+enableStaticServing = true
+
+[theme]
+base = "light"
+primaryColor = '#0672CB'
+backgroundColor = '#FFFFFF'
+secondaryBackgroundColor = '#F5F6F7'
+textColor = '#0E0E0E'
+font = "sans serif"
