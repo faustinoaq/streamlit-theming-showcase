@@ -79,18 +79,23 @@ with st.form(key='my_form'):
     st.checkbox("Is this cool or what?")
     
     j, k = st.columns(2)
-    
-    j.text_input("Username", placeholder="User name here")
-    
-    k.text_input("Password", placeholder="Type something...", type="password")
+
+    with j:
+        st.text_input("Username", placeholder="User name here")
+
+    with k:
+        st.text_input("Password", placeholder="Type something...", type="password")
     
     f, g = st.columns(2)
-    
-    f.number_input("So many numbers", 0, 100, 37)
-    g.selectbox(
-        "My favorite thing in the world is...",
-        ["Streamlit", "Theming", "Baloooons 🎈 "]
-    )
+
+    with f:
+        st.number_input("So many numbers", 0, 100, 37)
+
+    with g:
+        st.selectbox(
+            "My favorite thing in the world is...",
+            ["Streamlit", "Theming", "Baloooons 🎈 "]
+        )
 
     submit_button = st.form_submit_button(label='Submit')
 
