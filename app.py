@@ -21,7 +21,7 @@ header {visibility: hidden;}
 # Widgets
 
 st.write("""
-Hello *world!* :sunglasses: Inspired by [theming showcase](https://github.com/streamlit/theming-showcase).
+Hello *world!* :sunglasses: See source in [Github](ttps://github.com/faustinoaq/streamlit-theming-showcase).
 """)
 
 with st.popover("More info"):
